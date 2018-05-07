@@ -1,0 +1,83 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sun May  6 21:04:33 2018
+| Host         : AylinAsus running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file project_control_sets_placed.rpt
+| Design       : project
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    74 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              87 |           34 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              63 |           19 |
+| Yes          | No                    | No                     |              44 |           17 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              44 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+--------------------------------+--------------------------------------+------------------+----------------+
+|            Clock Signal           |          Enable Signal         |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++-----------------------------------+--------------------------------+--------------------------------------+------------------+----------------+
+|  ULTRASONIC_DRIVER/ball_on_blue   |                                |                                      |                1 |              1 |
+|  ULTRASONIC_DRIVER/ball_on_blue   |                                | RADAR_DRIVER/ball_on_green4_out      |                1 |              1 |
+|  clk_BUFG                         | ULTRASONIC_DRIVER/trig_i_1_n_0 | ULTRASONIC_DRIVER/trig0_carry__1_n_1 |                1 |              1 |
+|  sensor_loc_out_reg[7]_i_3_n_0    | SERVO_DRIVER/pwm0_carry__2_n_0 | SERVO_DRIVER/pwm_i_1_n_0             |                1 |              1 |
+|  pin_sysclk_IBUF_BUFG             |                                |                                      |                3 |              6 |
+|  clk_BUFG                         | ULTRASONIC_DRIVER/E[0]         |                                      |                3 |              8 |
+|  clk_25mhz_reg_n_0_BUFG           |                                |                                      |                6 |              9 |
+|  clk_25mhz_reg_n_0_BUFG           |                                | VGA_DRIVER/clear                     |                4 |             10 |
+|  clk_25mhz_reg_n_0_BUFG           | VGA_DRIVER/sel                 | VGA_DRIVER/v_count0                  |                3 |             10 |
+|  clk_25mhz_reg_n_0_BUFG           | VGA_DRIVER/E[0]                |                                      |                4 |             10 |
+|  clk_25mhz_reg_n_0_BUFG           | VGA_DRIVER/video_on_h_reg_0[0] |                                      |                3 |             10 |
+|  sensor_loc_out_reg[7]_i_3_n_0    |                                |                                      |                5 |             16 |
+|  sensor_loc_out_reg[7]_i_3_n_0    | SERVO_DRIVER/pwm_time1         |                                      |                7 |             16 |
+|  pin_sysclk_IBUF_BUFG             |                                | SERVO_DRIVER/count[0]_i_1_n_0        |                5 |             20 |
+|  ULTRASONIC_DRIVER/red_out_reg[0] |                                |                                      |               10 |             22 |
+|  pin_sysclk_IBUF_BUFG             |                                | ULTRASONIC_DRIVER/cont1_carry__1_n_1 |                9 |             32 |
+|  clk_BUFG                         | pin_echo_IBUF                  | ULTRASONIC_DRIVER/E[0]               |                8 |             32 |
+|  clk_BUFG                         |                                |                                      |                9 |             33 |
++-----------------------------------+--------------------------------+--------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 6      |                     1 |
+| 8      |                     1 |
+| 9      |                     1 |
+| 10     |                     4 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+

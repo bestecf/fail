@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May  7 02:48:09 2018
+# Process ID: 11008
+# Current directory: C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12284 C:\Users\User\Desktop\PROJE SON DIGILENT\digilent_project\digilent_project.xpr
+# Log file: C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/vivado.log
+# Journal file: C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Aylin Yazman/Documents/Vivado/digilent_project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 814.828 ; gain = 128.770
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: project
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 893.656 ; gain = 75.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'project' [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/project.vhd:38]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/vga_sync.vhd:6' bound to instance 'VGA_DRIVER' of component 'vga_sync' [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/project.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/vga_sync.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (1#1) [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/vga_sync.vhd:12]
+INFO: [Synth 8-3491] module 'ultrasonic_code' declared at 'C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/ultrasonic.vhd:6' bound to instance 'ULTRASONIC_DRIVER' of component 'ultrasonic_code' [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/project.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'ultrasonic_code' [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/ultrasonic.vhd:13]
+WARNING: [Synth 8-614] signal 'centimeter' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/ultrasonic.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'ultrasonic_code' (2#1) [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/ultrasonic.vhd:13]
+INFO: [Synth 8-3491] module 'radar_screen' declared at 'C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:7' bound to instance 'RADAR_DRIVER' of component 'radar_screen' [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/project.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'radar_screen' [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:15]
+WARNING: [Synth 8-614] signal 'cosrom' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:45]
+WARNING: [Synth 8-614] signal 'sensor_loc_in' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:45]
+WARNING: [Synth 8-614] signal 'sinrom' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:45]
+WARNING: [Synth 8-614] signal 'pixel_row' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:45]
+WARNING: [Synth 8-614] signal 'pixel_column' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:45]
+WARNING: [Synth 8-614] signal 'ball_col' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:45]
+WARNING: [Synth 8-614] signal 'ball_size' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:45]
+WARNING: [Synth 8-614] signal 'ball_row' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'radar_screen' (3#1) [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/radar_screen.vhd:15]
+INFO: [Synth 8-3491] module 'servo_motor' declared at 'C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/servo_motor.vhd:6' bound to instance 'SERVO_DRIVER' of component 'servo_motor' [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/project.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'servo_motor' [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/servo_motor.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'servo_motor' (4#1) [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/servo_motor.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'project' (5#1) [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/sources_1/new/project.vhd:38]
+WARNING: [Synth 8-3331] design radar_screen has unconnected port vert_sync_out
+WARNING: [Synth 8-3331] design radar_screen has unconnected port horiz_sync_out
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 947.855 ; gain = 129.668
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 947.855 ; gain = 129.668
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/constrs_1/new/radar_project_pins.xdc]
+Finished Parsing XDC File [C:/Users/User/Desktop/PROJE SON DIGILENT/digilent_project/digilent_project.srcs/constrs_1/new/radar_project_pins.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1302.477 ; gain = 484.289
+18 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1302.477 ; gain = 484.289
+write_schematic -format pdf -orientation portrait -scope visible C:/Users/User/Desktop/B/schematic.pdf
+C:/Users/User/Desktop/B/schematic.pdf
+write_schematic -format pdf -orientation portrait -force C:/Users/User/Desktop/B/schematic.pdf
+C:/Users/User/Desktop/B/schematic.pdf
+write_schematic -format pdf -orientation portrait -scope visible C:/Users/User/Desktop/B/schematiCc.pdf
+C:/Users/User/Desktop/B/schematiCc.pdf
+write_schematic -format pdf -orientation landscape C:/Users/User/Desktop/B/scheEmatic.pdf
+C:/Users/User/Desktop/B/scheEmatic.pdf
+write_schematic C:/Users/User/Desktop/B/schematic.sch
+C:/Users/User/Desktop/B/schematic.sch
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  7 02:56:29 2018...
